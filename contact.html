@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Waitlist HTML Demo - Contact us</title>
+    <title>MagnumKare - Contact us</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <script>
@@ -11,7 +11,7 @@
             document.querySelector('html').classList.add('dark');
         }
     </script>     
-<script defer data-domain='preview.cruip.com,rollup.cruip.com' src='../../plausible.cruip.com/js/script.js'></script></head>
+</head>
 
 <body class="c7wkd clmvh cisrt c2gcs ce7fn c7e3b cj90m">
 
@@ -117,7 +117,7 @@
                         <!-- Contact form -->
                         <div class="ckwv3 cbxb0 cezsk chwso c3927 cgio7 cya07 clw5z ciay6 conig cqckm cl110 cfs2v cjewx c7a79 c0zgo cc8zc ctanz c1upr c2wd7 c1t8r cd8xp c330t">
                             <div class="czrhe coe0p cgc2y c81ef">
-                                <form class="ckwv3">
+                                <form class="ckwv3 contact-form" id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbyqyTfYTszQu4m8B6Nw_Qdgp1SP1lFWQhnBc9w9TFxonpjAYHt-Q82YohosSYR9AU8N/exec">
                                     
                                     <!-- Border with dots in corners -->
                                     <div class="cr8aa clot7 cag0k ccjiw cr2ij cevtx cpue7 cjkk2 csmr0 cym3j crgvw cq4r1 cehp5 cxgoq cr5hf c1qs0 c26dl cxpxq c2z22 cfdqj chqy8 ci2tu c0cnt cvvig cba0k ck5ws c5pov" aria-hidden="true"></div>
@@ -132,7 +132,7 @@
                                                             <path d="M14.9 0c-.3 0-8.4.8-11.6 4-2.8 2.8-2.2 6.5-1.2 8.5L.3 14.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3l1.8-1.8c.9.4 2.2.8 3.6.8 1.6 0 3.3-.5 4.9-2 3.4-3.4 4-11.3 4-11.6 0-.3-.1-.6-.3-.8-.2-.2-.5-.3-.8-.3Zm-4.3 11.3c-1.9 1.9-4.2 1.5-5.5 1.1L9.4 8c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L3.6 11c-.4-1.4-.8-3.7 1.1-5.6 1.9-1.9 6.5-2.9 9.2-3.3-.3 2.3-1.1 7-3.3 9.2Z"></path>
                                                         </svg>                                                      
                                                     </div>
-                                                    <input id="name" class="coyoz coe0p cyujy cjygq cc7et" type="text" placeholder="Your name..." required="">
+                                                    <input id="name"  name="name" class="coyoz coe0p cyujy cjygq cc7et" maxlength="20" type="text" placeholder="Your name..." required="">
                                                 </div>
                                             </div>
                                             <div>
@@ -143,38 +143,20 @@
                                                             <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z"></path>
                                                         </svg>                                                      
                                                     </div>
-                                                    <input id="email" class="coyoz coe0p cyujy cjygq cc7et" type="email" placeholder="Your email..." required="">
+                                                    <input id="email" name="email" class="coyoz coe0p cyujy cjygq cc7et" type="email" placeholder="Your email..." required>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <label class="cz99u" for="company">Company size</label>
-                                                <div class="ckwv3">
-                                                    <div class="cwysf cr8aa c9v7h cu4yo cezsk chwso cyi7p cud52 cis7l">
-                                                        <svg class="cdyx3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                                                            <path d="m5.2.02 10 2A1 1 0 0 1 16 3v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3V1A1 1 0 0 1 5.2.02ZM2 12v2h4v-2H2Zm0-4v2h4V8H2Zm6 6h6V3.82l-8-1.6V6h1a1 1 0 0 1 1 1v7Zm2-8h2v6h-2V6Z"></path>
-                                                        </svg>                                                      
-                                                    </div>
-                                                    <select id="company" class="cyg65 coe0p cyujy cc7et" required="">
-                                                        <option selected="" disabled="" hidden="">Company size</option>
-                                                        <option>1 to 5 members</option>
-                                                        <option>5 to 20 members</option>
-                                                        <option>More than 20 members</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            
                                             <div>
                                                 <label class="cz99u" for="message">Message</label>
-                                                <textarea id="message" class="cot75 coe0p c4gmd cc7et" placeholder="Your message.." rows="3" required=""></textarea>
+                                                <textarea id="message" name="message" class="cot75 coe0p c4gmd cc7et" placeholder="Your message.." rows="3" required></textarea>
                                             </div>
                                             <div>
-                                                <label class="cezsk chwso">
-                                                    <input type="checkbox" class="cjnh9">
-                                                    <span class="ct1ec cc7et ckasv">I'd like to receive updates &amp; product news.</span>
-                                                </label>                                            
+                                                <p  class="contact-form-Message"></p>                                        
                                             </div>
                                         </div>
                                         <div>
-                                            <button class="chuxb coe0p ccs7d ceto1 cfhsj czmlk czbbd cg4ff">Submit</button>
+                                            <button class="chuxb coe0p ccs7d ceto1 cfhsj czmlk czbbd cg4ff" id="submit" name="submit" type="submit" >Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -237,7 +219,7 @@
             <div class="crh5c cy6zq">
                 <div class="czrhe cpthp">
                     <div class="c82jv c9pd1">
-                        <p class="cc7et cgrfs cauea">Empowering healthcare professionals with cutting-edge technology for a brighter, healthier future.</p>
+                        <p class="cc7et cgrfs cauea"></p>
                     </div>
                 </div>
             </div>

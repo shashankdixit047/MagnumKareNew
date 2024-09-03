@@ -61,3 +61,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".contact-form").forEach(function (e) {
+    e.addEventListener("submit", function (t) {
+      t.preventDefault();
+      var n = new FormData(e),
+        a = e.querySelector(".contact-form-Message");
+      (a.innerText = "Processing Your Message"),
+        (a.style.display = "block"),
+        fetch(e.action, { method: "POST", body: n })
+          .then(function (t) {
+            t.ok
+              ? ((a.innerText = "Your message has been sent!"),
+                setTimeout(function () {
+                  e.reset(), (a.innerText = "");
+                }, 4000))
+              : (a.innerText = "Failed to send message");
+          })
+          .catch(function (t) {
+            console.error("Error:", t),
+              (a.innerText = "Something Went Wrong: " + t);
+          });
+    });
+  });
+});
